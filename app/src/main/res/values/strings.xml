@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Gerenciador Médico</string>
+    <string name="paciente">Paciente</string>
+    <string name="medico">Médico</string>
+    <string name="consulta">Consulta</string>
+    <string name="adicionar_paciente">Adicionar Pacientes</string>
+    <string name="adicionar_medico">Adicionar Medicos</string>
+    <string name="adicionar_consulta">Adicionar Consultas</string>
+    <string name="editar_paciente">Editar Pacientes</string>
+    <string name="editar_medico">Editar Medicos</string>
+    <string name="editar_consulta">Editar Consultas</string>
+    <string name="listar_paciente">Listar Pacientes</string>
+    <string name="listar_medico">Listar Medicos</string>
+    <string name="listar_consulta">Listar Consultas</string>
+    <string name="adicionar">Adicionar</string>
+    <string name="listar">Listar</string>
+    <string name="editar">Editar</string>
+    <string name="excluir">Excluir</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="nome">Nome*</string>
+    <string name="crm">CRM*</string>
+    <string name="grp_sanguineo">Grupo Sanguineo*</string>
+    <string name="logradouro">Logradouro*</string>
+    <string name="numero">Numero*</string>
+    <string name="cidade">Cidade*</string>
+    <string name="uf">UF*</string>
+    <string name="celular">Celular</string>
+    <string name="fixo">Fixo</string>
+    <string name="campos_obrigatorios">*Campos Obrigatórios</string>
+    <string name="observacao">Observação</string>
+    <string name="data_hora_inicio">Horário de Inicio*</string>
+    <string name="data_hora_fim">Horário do Fim*</string>
+    <string name="gerenciador">Gerenciamento Medico</string>
+</resources>
