@@ -14,10 +14,10 @@
         android:textSize="20sp"
         android:layout_marginTop="20dp"
         android:textColor="#000"
-        android:text="@string/listar_paciente" />
+        android:text="@string/listar_medico" />
 
     <ListView
-        android:id="@+id/lvPaciente"
+        android:id="@+id/lvMedico"
         android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />

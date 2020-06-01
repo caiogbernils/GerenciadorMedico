@@ -31,4 +31,43 @@
     <string name="data_hora_inicio">Horário de Inicio*</string>
     <string name="data_hora_fim">Horário do Fim*</string>
     <string name="gerenciador">Gerenciamento Medico</string>
+    <array name="estados">
+        <item>AC</item>
+        <item>AC</item>
+        <item>AC</item>
+        <item>AC</item>
+        <item>AC</item>
+        <item>AC</item>
+        <item>AC</item>
+        <item>AC</item>
+        <item>AC</item>
+        <item>AC</item>
+        <item>AC</item>
+        <item>AC</item>
+        <item>AC</item>
+        <item>AC</item>
+        <item>AC</item>
+        <item>AC</item>
+        <item>AC</item>
+        <item>AC</item>
+        <item>AC</item>
+        <item>AC</item>
+        <item>AC</item>
+        <item>AC</item>
+        <item>AC</item>
+        <item>AC</item>
+        <item>AC</item>
+        <item>AC</item>
+        <item>AC</item>
+    </array>
+    <array name="grupoSanguineo">
+        <item>A</item>
+        <item>A-</item>
+        <item>A+</item>
+        <item>O</item>
+        <item>O-</item>
+        <item>O+</item>
+        <item>AB</item>
+        <item>RB</item>
+    </array>
 </resources>

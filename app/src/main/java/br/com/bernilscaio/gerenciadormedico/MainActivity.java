@@ -21,19 +21,54 @@ public class MainActivity extends AppCompatActivity {
 
         criarBD();
 
-        Button clickAdicionar = findViewById(R.id.btnAdicionar);
-        clickAdicionar.setOnClickListener(new View.OnClickListener() {
+        Button clickAdicionarPaciente = findViewById(R.id.btnAdicionarPaciente);
+        clickAdicionarPaciente.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Button paciente = findViewById(R.id.btnPaciente);
-                paciente.setVisibility(View.VISIBLE);
-                    Intent i = new Intent(getApplicationContext(), AdicionarPacienteActivity.class);
-                    startActivity(i);
+                Intent i = new Intent(getApplicationContext(), AdicionarPacienteActivity.class);
+                startActivity(i);
             }
         });
 
-        Button clickListar = findViewById(R.id.btnListar);
-        clickListar.setOnClickListener(new View.OnClickListener() {
+        Button clickListarPaciente = findViewById(R.id.btnListarPaciente);
+        clickListarPaciente.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(), ListarPacienteActivity.class);
+                startActivity(i);
+            }
+        });
+
+
+        Button clickAdicionarMedico = findViewById(R.id.btnAdicionarPaciente);
+        clickAdicionarPaciente.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(), AdicionarPacienteActivity.class);
+                startActivity(i);
+            }
+        });
+
+        Button clickListarMedico = findViewById(R.id.btnListarPaciente);
+        clickListarPaciente.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(), ListarPacienteActivity.class);
+                startActivity(i);
+            }
+        });
+
+        Button clickAdicionarConsulta = findViewById(R.id.btnAdicionarPaciente);
+        clickAdicionarPaciente.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(), AdicionarPacienteActivity.class);
+                startActivity(i);
+            }
+        });
+
+        Button clickListarConsulta = findViewById(R.id.btnListarPaciente);
+        clickListarPaciente.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(getApplicationContext(), ListarPacienteActivity.class);
@@ -69,7 +104,7 @@ public class MainActivity extends AppCompatActivity {
         sql.append("fixo VARCHAR(20)");
         sql.append(");");
 
-        sql.append("CREATE TABLE IF NOT EXISTS paciente (");
+        sql.append("CREATE TABLE IF NOT EXISTS consulta (");
         sql.append("_id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, ");
         sql.append("paciente_id INTEGER NOT NULL, ");
         sql.append("medico_id INTEGER NOT NULL, ");
@@ -81,7 +116,11 @@ public class MainActivity extends AppCompatActivity {
         sql.append(");");
 
         try {
-            db.execSQL(sql.toString());
+            //Executar (execSQL) um comando SQL de criação de tabela por vez.
+            String[] queries = sql.toString().split(";");
+            for(String query : queries){
+                db.execSQL(query);
+            }
         } catch (SQLException e) {
             Toast.makeText(getApplicationContext(), "Error: " + e.getMessage(), Toast.LENGTH_LONG).show();
         }

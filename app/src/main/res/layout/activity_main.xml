@@ -8,11 +8,11 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/tvGerenciador"
+        android:id="@+id/tvPaciente"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="@string/app_name"
+        android:text="@string/paciente"
         android:textColor="#000"
         android:textSize="20sp" />
 
@@ -23,47 +23,80 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/btnAdicionar"
+            android:id="@+id/btnAdicionarPaciente"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/adicionar" />
 
         <Button
-            android:id="@+id/btnListar"
+            android:id="@+id/btnListarPaciente"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/listar" />
+
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvMedico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/medico"
+        android:textColor="#000"
+        android:textSize="20sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/btnPaciente"
+            android:id="@+id/btnListarMedico"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/paciente"
-            android:visibility="invisible" />
+            android:text="@string/listar" />
 
         <Button
-            android:id="@+id/btnMedico"
+            android:id="@+id/btnAdicionarMedico"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/medico"
-            android:visibility="invisible" />
-
-        <Button
-            android:id="@+id/btnConsulta"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/consulta"
-            android:visibility="invisible" />
+            android:text="@string/adicionar" />
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvCriarConsulta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/consulta"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnAdicionarConsulta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/adicionar" />
+
+        <Button
+            android:id="@+id/btnListarConsulta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/listar" />
+
+    </LinearLayout>
+
 </LinearLayout>

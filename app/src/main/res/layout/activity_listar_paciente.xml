@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/tvConsulta"
+        android:id="@+id/tvPaciente"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="20sp"
